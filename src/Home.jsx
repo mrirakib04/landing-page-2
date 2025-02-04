@@ -5,6 +5,7 @@ import BannnerHero from "./assets/img/Group.png";
 import groupImg1 from "./assets/img/Layer_1.png";
 import groupImg2 from "./assets/img/Group 3.png";
 import groupImg3 from "./assets/img/Group 4.png";
+import SectionTitle from "./components/SectionTitle";
 
 const Home = () => {
   return (
@@ -108,6 +109,18 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      {/* my inspiration section */}
+      <div className="flex flex-col items-center gap-5 sm:mt-10 mt-5">
+        <SectionTitle
+          title="My Inspiration"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati! Quisquam placeat totam debitis veniam voluptas non, corporis porro accusamus."
+        ></SectionTitle>
+        <iframe
+          src="https://www.youtube.com/embed/DGHn2uOAVCE?si=VvQQl0J0TQDuFsKT"
+          className="max-w-5xl w-full border-2 rounded-lg p-2"
+          height={400}
+        ></iframe>
       </div>
     </div>
   );
