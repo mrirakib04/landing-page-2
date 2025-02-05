@@ -5,6 +5,9 @@ import BannnerHero from "./assets/img/Group.png";
 import groupImg1 from "./assets/img/Layer_1.png";
 import groupImg2 from "./assets/img/Group 3.png";
 import groupImg3 from "./assets/img/Group 4.png";
+import htmlLogo from "./assets/img/html.png";
+import cssLogo from "./assets/img/css.png";
+import jsLogo from "./assets/img/js.png";
 import SectionTitle from "./components/SectionTitle";
 
 const Home = () => {
@@ -121,6 +124,40 @@ const Home = () => {
           className="max-w-5xl w-full border-2 rounded-lg p-2"
           height={400}
         ></iframe>
+      </div>
+      {/* my current targets section */}
+      <div className="flex flex-col items-center gap-5 sm:mt-10 mt-5">
+        <SectionTitle
+          title="My Current Targets"
+          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quod, minus deserunt dicta velit itaque blanditiis repudiandae sapiente."
+        ></SectionTitle>
+        <div className="max-w-5xl w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-5">
+          <div className="h-full sm:max-w-auto max-w-[350px] mx-auto w-full p-5 rounded-lg bg-[#FF4C1E]/20">
+            <img className="h-14" src={htmlLogo} alt="" />
+            <h3 className="text-xl font-bold my-2">HTML</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+              incidunt dicta nam iusto quaerat sint eveniet.
+            </p>
+          </div>
+          <div className="h-full sm:max-w-auto max-w-[350px] mx-auto w-full p-5 rounded-lg bg-[#004CE8]/20">
+            <img className="h-14" src={cssLogo} alt="" />
+            <h3 className="text-xl font-bold my-2">CSS</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+              velit architecto hic nisi quisquam optio.
+            </p>
+          </div>
+          <div className="h-full sm:max-w-auto max-w-[350px] mx-auto w-full p-5 rounded-lg bg-[#FFDF00]/20">
+            <img className="h-14" src={jsLogo} alt="" />
+            <h3 className="text-xl font-bold my-2">JS</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem voluptatum culpa assumenda quam! Ipsa temporibus quam
+              atque saepe.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
