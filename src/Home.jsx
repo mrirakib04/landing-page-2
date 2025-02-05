@@ -12,6 +12,7 @@ import fbLogo from "./assets/img/facebook.png";
 import ghLogo from "./assets/img/github.png";
 import inLogo from "./assets/img/linkedin-icon 1.png";
 import SectionTitle from "./components/SectionTitle";
+import supportBG from "./assets/img/handshake.jpg";
 
 const Home = () => {
   return (
@@ -162,33 +163,70 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* commitment text */}
-      <div className="max-w-5xl w-full mx-auto flex sm:flex-row flex-col gap-5 justify-between items-center mt-5 sm:mt-10 py-5">
-        <div>
-          <p className="text-xl font-bold">An open commitment by MRI. Rakib</p>
+      <div
+        className="max-w-5xl w-full mx-auto rounded-xl mt-5 sm:mt-10"
+        style={{
+          background: `url(${supportBG})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="w-full bg-black/55 rounded-xl p-10">
+          <div className="max-w-xl text-center text-white mx-auto w-full pt-5 sm:pb-10 pb-5">
+            <div className="w-full mb-5 max-w-lg mx-auto">
+              <h3 className="md:text-4xl sm:text-3xl text-2xl font-bold mb-2">
+                I need Support
+              </h3>
+              <p className="text-base text-gray-300">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Debitis accusamus quam excepturi vel similique.
+              </p>
+            </div>
+
+            <div className="w-full h-12 flex items-center sm:flex-row flex-col gap-3">
+              <input
+                className="h-full py-2 font-medium w-full bg-white border-2 border-white rounded-lg placeholder:text-gray-500 text-black px-4 text-lg"
+                type="text"
+                placeholder="Suggest me any feedback for me"
+              />
+              <button className="h-full py-2 px-4 rounded-lg font-bold text-black bg-white transition hover:bg-black hover:text-white cursor-pointer border-2 border-white">
+                Submit
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="flex items-center gap-2">
-          <a
-            className="border-2 border-transparent rounded-full transition hover:border-black"
-            href="https://www.facebook.com/"
-            target="_blank"
-          >
-            <img className="h-8" src={fbLogo} alt="" />
-          </a>
-          <a
-            className="border-2 border-transparent rounded-full transition hover:border-black"
-            href="https://github.com/"
-            target="_blank"
-          >
-            <img className="h-8" src={ghLogo} alt="" />
-          </a>
-          <a
-            className="border-2 border-transparent rounded-full transition hover:border-black"
-            href="https://linkedin.com/"
-            target="_blank"
-          >
-            <img className="h-8" src={inLogo} alt="" />
-          </a>
+      </div>
+      {/* commitment text */}
+      <div className="mt-5 sm:mt-10 w-full bg-red-50">
+        <div className="max-w-5xl w-full mx-auto flex sm:flex-row flex-col gap-5 justify-between items-center py-5">
+          <div>
+            <p className="text-xl font-bold">
+              An open commitment by MRI. Rakib
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <a
+              className="border-2 border-transparent rounded-full transition hover:border-black"
+              href="https://www.facebook.com/"
+              target="_blank"
+            >
+              <img className="h-8" src={fbLogo} alt="" />
+            </a>
+            <a
+              className="border-2 border-transparent rounded-full transition hover:border-black"
+              href="https://github.com/"
+              target="_blank"
+            >
+              <img className="h-8" src={ghLogo} alt="" />
+            </a>
+            <a
+              className="border-2 border-transparent rounded-full transition hover:border-black"
+              href="https://linkedin.com/"
+              target="_blank"
+            >
+              <img className="h-8" src={inLogo} alt="" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
