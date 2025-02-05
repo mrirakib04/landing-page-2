@@ -8,6 +8,9 @@ import groupImg3 from "./assets/img/Group 4.png";
 import htmlLogo from "./assets/img/html.png";
 import cssLogo from "./assets/img/css.png";
 import jsLogo from "./assets/img/js.png";
+import fbLogo from "./assets/img/facebook.png";
+import ghLogo from "./assets/img/github.png";
+import inLogo from "./assets/img/linkedin-icon 1.png";
 import SectionTitle from "./components/SectionTitle";
 
 const Home = () => {
@@ -157,6 +160,35 @@ const Home = () => {
               atque saepe.
             </p>
           </div>
+        </div>
+      </div>
+      {/* commitment text */}
+      <div className="max-w-5xl w-full mx-auto flex sm:flex-row flex-col gap-5 justify-between items-center mt-5 sm:mt-10 py-5">
+        <div>
+          <p className="text-xl font-bold">An open commitment by MRI. Rakib</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <a
+            className="border-2 border-transparent rounded-full transition hover:border-black"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
+            <img className="h-8" src={fbLogo} alt="" />
+          </a>
+          <a
+            className="border-2 border-transparent rounded-full transition hover:border-black"
+            href="https://github.com/"
+            target="_blank"
+          >
+            <img className="h-8" src={ghLogo} alt="" />
+          </a>
+          <a
+            className="border-2 border-transparent rounded-full transition hover:border-black"
+            href="https://linkedin.com/"
+            target="_blank"
+          >
+            <img className="h-8" src={inLogo} alt="" />
+          </a>
         </div>
       </div>
     </div>
