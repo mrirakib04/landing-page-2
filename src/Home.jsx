@@ -11,6 +11,9 @@ import jsLogo from "./assets/img/js.png";
 import fbLogo from "./assets/img/facebook.png";
 import ghLogo from "./assets/img/github.png";
 import inLogo from "./assets/img/linkedin-icon 1.png";
+import reactImg from "./assets/img/react.png";
+import nodeImg from "./assets/img/nodejs.png";
+import mongoImg from "./assets/img/mongodb.png";
 import SectionTitle from "./components/SectionTitle";
 import supportBG from "./assets/img/handshake.jpg";
 
@@ -163,6 +166,61 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* my next targets section */}
+      <div className="flex flex-col items-center gap-5 sm:mt-10 mt-5">
+        <SectionTitle
+          title="My Next Targets"
+          description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo provident consequatur ab vero nostrum."
+        ></SectionTitle>
+        <div className="w-[100vw] mx-auto flex flex-col items-center gap-5 px-2">
+          <div className="w-full flex sm:flex-row flex-col sm:items-start gap-5 items-center sm:max-w-5xl max-w-[350px] border-2 border-black p-5 rounded-lg">
+            <div className="w-40">
+              <img className="mx-auto" src={reactImg} alt="" />
+            </div>
+            <div className="border sm:h-[100px] sm:w-0 h-0 w-full"></div>
+            <div className="w-full flex flex-col gap-1">
+              <h4 className="text-lg sm:text-xl md:text-2xl font-bold">
+                React
+              </h4>
+              <p className="md:text-lg text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                amet labore blanditiis, atque sapiente obcaecati nostrum
+                eveniet, consectetur unde velit, ea numquam.
+              </p>
+            </div>
+          </div>
+          <div className="w-full flex sm:flex-row flex-col sm:items-start gap-5 items-center sm:max-w-5xl max-w-[350px] border-2 border-black p-5 rounded-lg">
+            <div className="w-40">
+              <img className="mx-auto" src={nodeImg} alt="" />
+            </div>
+            <div className="border sm:h-[100px] sm:w-0 h-0 w-full"></div>
+            <div className="w-full flex flex-col gap-1">
+              <h4 className="text-lg sm:text-xl md:text-2xl font-bold">Node</h4>
+              <p className="md:text-lg text-base">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+                itaque, atque sint ipsa quisquam est recusandae fugit quibusdam.
+              </p>
+            </div>
+          </div>
+          <div className="w-full flex sm:flex-row flex-col sm:items-start gap-5 items-center sm:max-w-5xl max-w-[350px] border-2 border-black p-5 rounded-lg">
+            <div className="w-40">
+              <img className="mx-auto" src={mongoImg} alt="" />
+            </div>
+            <div className="border sm:h-[100px] sm:w-0 h-0 w-full"></div>
+            <div className="w-full flex flex-col gap-1">
+              <h4 className="text-lg sm:text-xl md:text-2xl font-bold">
+                MongoDB
+              </h4>
+              <p className="md:text-lg text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ea
+                perferendis animi nesciunt pariatur, amet voluptas harum eos,
+                odit natus nam consequatur aliquam. Mollitia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* support section */}
       <div
         className="max-w-5xl w-full mx-auto rounded-xl mt-5 sm:mt-10"
         style={{
